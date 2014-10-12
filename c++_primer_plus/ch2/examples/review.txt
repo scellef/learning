@@ -1,0 +1,36 @@
+1. What are the modules of C++ programs called?  
+A. Functions.
+
+2. What does the following preprocessor directive do?
+  #include <iostream>
+A. It substitutes the contents of the iostream file in the source code before being compiled.
+
+3. What does the following statement do?
+  Using namespace std;
+A. It declares the default namespace of the included libraries in order to make available all of the libraries' functions without having to explicitly call the library with each invocation
+
+4. What statement would you use to print the phrase "Hello, world" and then start a new line?
+A. cout << "Hello, world" << endl;
+
+5. What statement would you use to create an integer variable with the name cheeses?
+A. int cheeses;
+
+6. What statement would you use to assign the value 32 to the variable cheese?
+A. cheeses = 32;
+
+7. What statement would you use to read a value from keyboard input into the variable cheeses?
+A. cin >> cheeses;
+
+8. What statement would you use to print "We have X varieties of cheese," where the current value of the cheeses variable replaces X?
+A. cout << "We have " << cheeses << " varieties of cheese." << endl;
+
+9. What do the following function prototypes tell you about the functions?
+    int froop (double t);
+    void rattle(int n);
+    int prune(void);
+A. froop returns an integer, and takes a double length floating point argument stored in a local variable t.
+   rattle doesn't return a value, and takes an interger argument stored in a local variable n.
+   prune returns an integer, and doesn't take an argument.
+
+10. When do you not have to use the keyword return when you define a function?
+A.  When your function doesn't return a value, which is prototyped and defined as void function()
