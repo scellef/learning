@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 
-message = "Hello world!"
-print(message)
+message = "hello world!"
+print(message.title())
