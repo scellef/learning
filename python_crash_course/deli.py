@@ -17,6 +17,7 @@ def order_sandwich(orders):
             if str(order):
                 orders.append(order)
     except:
+        print()
         return orders
 
 def make_sandwich(orders, completed):
