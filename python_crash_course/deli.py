@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def main():
-    menu = ['tuna', 'ham', 'roast beef', 'turkey', 'caprese']
+    menu = ['tuna', 'ham', 'roast beef', 'turkey', 'caprese', 'pastrami']
     sandwich_orders = []
     finished_sandwiches = []
 
@@ -22,11 +22,15 @@ def order_sandwich(orders):
 
 def make_sandwich(orders, completed):
     for order in range(len(orders)):
-        completed.append(orders.pop())
+        if orders[-1] == "pastrami":
+            print("Sorry!  We're out of pastrami.")
+            orders.pop()
+        else:
+            completed.append(orders.pop())
     return completed
 
 def deliver_sandwich(order):
-    print("Your order is ready! Here they are:")
+    print("Your order is ready! Here it is:")
     for sandwich in order:
         print(sandwich.capitalize(), "sandwich")
 
